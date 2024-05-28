@@ -34,17 +34,19 @@ This repository is organized with the following folder structure:
   - `server.py`: The server application responsible for orchestrating the botnet and sending commands to the clients.
   - `file.py`: The Python script to be executed on the clients upon receiving commands from the server.
 
+- **GUI/**: This directory contains the GUI components for controlling the botnet.
+  - `gui.py`: The script for the Tkinter GUI, allowing users to start and stop client and server processes.
+  - `__init__.py`: Initializes the GUI.
+
 - **README.md**: This file provides an overview of the repository, including its purpose, usage guidelines, disclaimer, and other relevant information.
 
 - **LICENSE**: This file contains the MIT License, which governs the use and distribution of the code in this repository.
 
-- **__init__.py**: This file initializes the repository and orchestrates the execution of the client and server applications.
+The interaction between the components of the botnet and the GUI is as follows:
 
-The interaction between the components of the botnet is as follows:
-1. `init.py` run ups the `clients` and following that the `server` as well.
-2. The server application (`server.py`) sends commands to the client applications (`client.py`) instructing them to fetch and execute the `file.py` script.
-3. Upon receiving commands from the server, the client applications fetch the `file.py` script from the server and execute it locally.
-4. The `file.py` script carries out the desired actions on the client machine, simulating the behavior of a botnet.
+1. `init.py` initializes the repository and orchestrates the execution of the client and server applications.
+2. The GUI script (`gui.py`) provides controls for starting and stopping the client and server processes.
+3. Users can interact with the GUI to start or stop the botnet processes as needed.
 
 Please refer to the individual files for detailed comments and documentation on their functionality and usage.
 
@@ -62,4 +64,4 @@ Special thanks to [Rikhi Singh] for creating this repository for educational pur
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE).
+This repository is licensed under the [MIT License](https://).

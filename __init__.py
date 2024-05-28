@@ -1,34 +1,15 @@
 '''
-    This file is responsible for orchestrating the execution of the client and server applications.
+This script imports the 'run_gui()' function from the 'gui.py' module located in the 'GUI' folder.
 
-    It first executes the client application (client.py) to initialize the client machines.
-    After a brief delay to allow the clients to be ready, it then starts the server application (server.py).
+If executed directly (i.e., not imported as a module), it runs the GUI by calling the 'run_gui()' function.
 
-    For detailed information about each file, refer to their respective comments and documentation.
+The GUI provides controls for starting and stopping the client and server processes in the botnet, as well 
+as displaying information about the purpose of each file.
+
+The 'run_gui()' function initializes the Tkinter window and sets up the layout with buttons and a status label.
 '''
 
-# Imports
-import subprocess
-import time
-import os
-
-# function responsible to start the clients
-def start_clients():
-    # Start the client application
-    deps_folder = os.path.join(os.path.dirname(__file__), 'deps')
-    subprocess.Popen(['python', os.path.join(deps_folder, 'client.py')])
-
-# main function to call start_clients() and then wait execute server.py
-def main():
-    # Start the client application
-    start_clients()
-
-    # Wait for the client to be ready
-    time.sleep(5)  
-
-    # Start the server application
-    deps_folder = os.path.join(os.path.dirname(__file__), 'deps')
-    subprocess.Popen(['python', os.path.join(deps_folder, 'server.py')])
+from GUI.gui import run_gui
 
 if __name__ == "__main__":
-    main()
+    run_gui()
