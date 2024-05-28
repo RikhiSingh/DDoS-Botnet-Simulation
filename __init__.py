@@ -1,6 +1,10 @@
 '''
-    This file execute the clients.py and following that the server.py
-    Info about each of the file and found in themselves.
+    This file is responsible for orchestrating the execution of the client and server applications.
+
+    It first executes the client application (client.py) to initialize the client machines.
+    After a brief delay to allow the clients to be ready, it then starts the server application (server.py).
+
+    For detailed information about each file, refer to their respective comments and documentation.
 '''
 
 # Imports
