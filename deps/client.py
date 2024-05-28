@@ -1,7 +1,7 @@
 '''
-    This script will run on all the clients listening to fetch
-    the 'file.py' having the code that will execute on all the
-    clients making them execute the same file in unison
+    This script runs on all client machines, listening for requests to fetch the 'file.py' script.
+    Once the script is fetched, it is executed on all clients simultaneously, ensuring synchronized 
+    execution of the same code on multiple machines.
 '''
 
 from flask import Flask
