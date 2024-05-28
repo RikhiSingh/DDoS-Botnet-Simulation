@@ -1,42 +1,42 @@
-# DoS Attack Imitation with Python and Selenium
+# DDoS Botnet Simulation Repository
 
-## Overview
-This Python script imitates a Denial of Service (DoS) attack by repeatedly sending requests to a target website using Selenium, a web automation tool. This is purely for educational purposes and should not be used for malicious intent.
+Welcome to the DDoS Botnet Simulation Repository! This repository is created for educational purposes to help individuals learn about DDoS (Distributed Denial of Service) botnets and understand their architecture, functioning, and implications.
 
-## Requirements
-- Python 3
-- Selenium library
-- Chrome web browser
-- ChromeDriver (automatically installed via WebDriver Manager)
+## Purpose
 
-## Installation
-1. Clone or download the repository.
-2. Install Python 3 if not already installed.
-3. Install the required dependencies:
-    ```
-    pip install selenium webdriver_manager
-    ```
-4. Ensure you have the Chrome browser installed.
+The main goal of this repository is to provide a hands-on learning experience for individuals interested in cybersecurity, particularly in the area of DDoS attacks and botnet structures. Through this repository, you will explore:
 
-## Usage
-1. Open the Python script `dos_attack.py` in a text editor.
-2. Modify the following variables according to your requirements:
-    - `url`: The URL of the target website.
-    - `placeholder_text`: The placeholder text of the input field to locate.
-    - `button_text`: The text of the button to locate and click.
-    - `iterations`: The number of iterations or requests to be sent.
-3. Save the changes.
-4. Run the script:
-    ```
-    python dos_attack.py
-    ```
-5. Observe the output in the console.
-
-## Important Notes
-- Ensure that you have permission to perform tests on the target website. Running this script without authorization may be illegal and unethical.
-- This script sends a high volume of requests to the target website, which may cause disruption to its normal operation. Use it responsibly and only on websites that you own or have explicit permission to test.
-- Remember that performing DoS attacks on websites without permission is illegal and unethical and can result in severe consequences.
+- How DDoS botnets operate
+- Components and architecture of a DDoS botnet
+- Techniques used in DDoS attacks
+- Defensive strategies to mitigate DDoS attacks
 
 ## Disclaimer
-This script is provided for educational purposes only. The author and contributors are not responsible for any misuse or damage caused by its use.
 
+This repository is intended solely for educational and research purposes. The code and materials provided here are for learning purposes only. Any misuse of the information or code contained in this repository for illegal activities or unethical behavior is strictly prohibited.
+
+**I am not responsible for any misuse of the content provided in this repository.**
+
+## Usage
+
+You are free to clone, fork, and modify the code in this repository for educational purposes. However, please adhere to the following guidelines:
+
+- Use the code and materials responsibly and ethically.
+- Do not engage in any activities that violate laws or regulations.
+- Do not use the code for malicious purposes or to harm others.
+
+## Contributing
+
+Contributions to this repository are welcome! If you have suggestions for improvements, bug fixes, or new features, please feel free to open an issue or submit a pull request. However, please ensure that your contributions align with the educational goals and ethical principles of this repository.
+
+## Support
+
+If you have any questions, feedback, or concerns about this repository, please feel free to reach out by [opening an issue](https://github.com/RikhiSingh/DDoS-Botnet-Simulation/issues).
+
+## Acknowledgments
+
+Special thanks to [Rikhi Singh] for creating this repository for educational purposes and promoting responsible use of cybersecurity knowledge.
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE).
