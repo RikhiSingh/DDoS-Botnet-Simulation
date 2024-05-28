@@ -1,8 +1,14 @@
 '''
-    This file will run as the server and send the 'file.py'
-    on all the clients defined in "CLIENTS" and make them 
-    execute the file.
+    This file serves as the server component, responsible for distributing the 'file.py' script 
+    to all defined clients specified in "CLIENTS" and triggering their execution of the file.
+
+    The server listens for requests from clients, providing the 'file.py' script upon request. 
+    It also handles messages from clients, such as requests to fetch and execute the file.
+
+    For each client, the server sends a request to fetch and execute the file, ensuring synchronized 
+    execution of the same code on multiple client machines.
 '''
+
 
 import requests
 from flask import Flask, request
